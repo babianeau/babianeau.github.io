@@ -1,0 +1,281 @@
+* {
+    margin:0;
+    padding:0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: "Saguro";
+    src: local("Saguro"),
+      url("../fonts/SaguaroSans-Regular.woff") format("woff"), url("../fonts/SaguaroSans-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Saguro It";
+    src: local("Saguro"),
+      url("../fonts/SaguaroSans-Italic.woff") format("woff"), url("../fonts/SaguaroSans-Italic.woff2") format("woff2");
+      font-style:italic
+  }
+
+  :root {
+    --base-spacing: 1rem;
+    --base-color:rgb(5,5,5);
+    --base-invert:rgb(250,250,250);
+    --base-fontSize: 1rem;
+    --sm-fontSize: 1rem;
+    /*--colors--*/
+    --yellow-color:#ffff00;
+    --green-color:#00b400;
+    --gray-color:#b3b3b3;
+    --white-color:#ffffff;
+    --red-color:#ff0000;
+    --cyan-color:#bdfdfe;
+    --gold-color:#9a8955;
+    --mint-green-color:#90ffcc;
+}
+
+em {
+    font-family: "Saguro It";
+
+}
+
+
+body {
+    font-family: "Saguro";
+    line-height:1.2;
+    overflow:hidden
+}
+
+.IB-header {
+    position:absolute;
+    z-index:9999;
+    width:50vw;
+    box-sizing: border-box;
+    padding:var(--base-spacing)
+}
+
+@media only screen and (max-width: 700px) {
+    .IB-header {
+        width:100%;
+    }  
+}
+
+.IB-header p{
+    display:inline
+}
+
+main {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        height: calc(var(--vh, 1vh) * 100);    
+    }
+}
+
+
+.swiper-container {
+    height:100%;
+}
+
+.swiper-slide {
+    background:var(--base-invert);
+    cursor:pointer
+}
+
+.black {
+    background-color:var(--base-color);
+}
+.yellow {
+    background-color:var(--yellow-color);
+}
+.green {
+    background-color:  var(--green-color);
+}
+.gray {
+    background-color: var(--gray-color);
+}
+.white {
+    background-color: var(--white-color);
+}
+.red {
+    background-color: var(--red-color);
+}
+.cyan {
+    background-color: var(--cyan-color);
+}
+.gold {
+    background-color: var(--gold-color);
+}
+.mint-green {
+    background-color: var(--mint-green-color);
+}
+
+
+
+
+
+.credits {
+    opacity:0;
+    margin-left:.25rem;
+    transition:opacity .15s ease-in;
+}
+
+.info {
+    display:inline-block;
+    border:1px solid;
+    width:15px;
+    height:15px;
+    border-radius:25px;
+    text-align:center;
+    line-height:1.4;
+    opacity:.5;
+    cursor:pointer;
+    font-size:.75rem
+}
+
+.info:hover + .credits {
+ opacity:.5
+}
+
+.invt {
+    color:white;
+}
+
+.MH-fig {
+    width:100%;
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    flex: 1 1 1px;
+    min-height:0;
+    bottom:var(--base-spacing);
+    box-sizing:border-box;
+    padding: var(--base-spacing) var(--base-spacing) 0;
+}
+
+.m-type {
+    font-size:1rem;
+}
+
+figcaption {
+    bottom:0;
+    max-width:50vw;
+    font-size:var(--base-spacing);
+    padding-top:var(--base-spacing);
+    box-sizing: border-box;
+    z-index:9999;
+}
+@media only screen and (max-width: 700px) {
+
+    .m-type {
+        font-size: var(--sm-fontSize)
+    }
+
+    figcaption {
+        font-size: var(--sm-fontSize);
+        max-width:100vw;
+    }
+    
+}
+
+.blend-mode {
+    mix-blend-mode: difference;
+    color: var(--base-invert)
+}
+
+.blend-mode a{
+    mix-blend-mode: difference;
+    color: var(--base-invert)
+}
+
+.mix .full-left {
+    mix-blend-mode: difference;
+    color: var(--base-invert)
+}
+
+a {
+    color: var(--base-color);
+}
+
+
+.left {
+    left:0;
+}
+
+.r {
+    padding-right:.5rem;
+    display:inline-block;
+}
+
+.full-left {
+    position:absolute;
+    bottom:0;
+}
+
+.swiper-slide-visible:has(.full-left) {
+    background:red
+}
+
+.yellow {
+    background: #FFFF00
+}
+
+.IB-cont {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    width:100%;
+    height:100%
+}
+
+.MH-contact a{
+    font-size:1.5rem;
+    color:var(--base-color);
+    border:1px solid;
+    border-radius:.75rem;
+    padding:3px 3px 0px 3px;
+    text-decoration:none;
+    margin-left:.25rem
+}
+
+.MH-fig img{
+   flex: 1;
+   height:90%;
+   object-fit: contain;
+   object-position:top left;
+   z-index:9998;
+}
+
+.w-m {
+    max-width: 55%;
+}
+
+.w-l {
+    max-width: 75%;
+}
+
+@media only screen and (max-width: 700px) {
+     .w-m {
+        max-width: 100%;
+    }
+    
+    .w-l {
+        max-width: 100%;
+    }
+    
+}
+
+h1 {
+    display:inline-block;
+    letter-spacing:.01rem;
+    font-weight:normal;
+    font-size:var(--base-spacing);
+}
