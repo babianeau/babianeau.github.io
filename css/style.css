@@ -248,7 +248,7 @@ a {
 
 .MH-fig img{
    flex: 1;
-   height:90%;
+   height:70%;
    object-fit: contain;
    object-position:top left;
    z-index:9998;
