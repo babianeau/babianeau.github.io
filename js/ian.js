@@ -1,5 +1,6 @@
 
 const Ian = new Swiper('.swiper-container', {
+lazy: true,
 effect: 'fade',
 loop: 'true',
 direction: 'vertical',
