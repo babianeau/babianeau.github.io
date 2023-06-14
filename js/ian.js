@@ -1,6 +1,5 @@
 
 const Ian = new Swiper('.swiper-container', {
-lazy: true,
 effect: 'fade',
 loop: 'true',
 direction: 'vertical',
@@ -22,7 +21,6 @@ init: function () {
         static.classList.remove('blend-mode');
     }
         
-  console.log('swiper initializeddddd');
 },
 },
     });
