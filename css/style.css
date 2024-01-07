@@ -33,6 +33,7 @@
     --cyan-color:#bdfdfe;
     --gold-color:#9a8955;
     --mint-green-color:#90ffcc;
+    --cool-gray-color:#c4dbf1;
 }
 
 em {
@@ -120,7 +121,10 @@ main {
 .mint-green {
     background-color: var(--mint-green-color);
 }
-
+.cool-gray
+{
+    background-color: var(--cool-gray-color);
+}
 .credits {
     opacity:0;
     transition:opacity .15s ease-in;
