@@ -34,6 +34,8 @@
     --gold-color:#9a8955;
     --mint-green-color:#90ffcc;
     --cool-gray-color:#c4dbf1;
+    --peach-color:#eeccb0;
+    --gold-yellow-color:#f1ac2b;
 }
 
 em {
@@ -121,9 +123,14 @@ main {
 .mint-green {
     background-color: var(--mint-green-color);
 }
-.cool-gray
-{
+.cool-gray {
     background-color: var(--cool-gray-color);
+}
+.peach {
+    background-color: var(--peach-color);
+}
+.gold-yellow {
+    background-color: var(--gold-yellow-color);
 }
 .credits {
     opacity:0;
